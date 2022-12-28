@@ -1,5 +1,46 @@
-1. Hello guys today we will install Magento 2.4.5-p1 with docker container
-2. We will manage v-host using apache2
-3. We will use proxy reverse for docker container redirect a domain
+1. Introductions
+    >  Hello guys today we will install Magento 2.4.5-p1 with docker container
+    >  We will manage v-host using apache2
+    >  We will use proxy reverse for docker container redirect a domain
 
+2. Docker 
+    > Clone magedocker repository from github URL:- https://github.com/miarsiddique/magedocker
 
+3. Magento Installation
+    > Open readme file on your localhost/magedocker/readme
+    > Install Magento 2.4.5-p1 using composer
+    > Copy composer code for clone magento 2.4.5-p1
+
+4. Docker Command 
+    > docker-compose up --build
+    > docker-compose up -d 
+    > docker exec -it {container_name} bash
+
+5. Proxy reverse
+    > sudo a2enmod proxy
+    > sudo a2enmod proxy_http
+    > sudo a2enmod proxy_balancer
+    > sudo a2enmod proxy_wstunnel
+    > sudo touch /etc/apache2/sites-available/magedocker.com.conf
+    > sudo nano /etc/apache2/sites-available/magedocker.com.conf
+    > Open magedocker.com.conf file via nano and add this code and change your port 
+
+        <VirtualHost *:80>
+
+            ServerName app.example.com
+
+            ProxyPreserveHost On
+            ProxyPass / http://127.0.0.1:8080/
+            ProxyPassReverse / http://127.0.0.1:8080/
+
+        </VirtualHost>
+
+    > sudo a2ensite magedocker.com.conf
+    > sudo systemctl restart apache2
+    > sudo nano /etc/hosts
+    > Open hosts file via nano and update your domain like
+        127.0.0.1 magedocker.com.conf
+        127.0.0.1 www.magedocker.com.conf
+
+6. Refrence sites 
+    > https://www.vultr.com/docs/how-to-configure-apache-as-a-reverse-proxy-with-mod-proxy-54152
