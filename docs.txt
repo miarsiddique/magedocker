@@ -1,0 +1,5 @@
+1. Hello guys today we will install Magento 2.4.5-p1 with docker container
+2. We will manage v-host using apache2
+3. We will use proxy reverse for docker container redirect a domain
+
+
