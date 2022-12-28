@@ -48,8 +48,8 @@
             --base-url=http://localhost/project-name/ 
             --db-host=localhost --db-name=mage24 
             --db-user=root --db-password=root@786 
-            --admin-firstname=Kinex --admin-lastname=Media 
-            --admin-email=kinextest2@gmail.com 
+            --admin-firstname=Digirock --admin-lastname=Media 
+            --admin-email=demotest@gmail.com 
             --admin-user=kmadmin 
             --admin-password=Toronto@10340 
             --language=en_US --currency=USD 
@@ -59,17 +59,17 @@
 
             <p class="note">Note:- With elasticsearch on Local.</p>
             <p>
-                php bin/magento setup:install --base-url="http://example.com/" --db-host="localhost" --db-name="mage242p1" --db-user="root" --db-password="root" --admin-firstname="kinex" --admin-lastname="media" --admin-email="kmadmin@example.com" --admin-user="kmadmin" --admin-password="Toronto@8969" --language="en_US" --currency="USD" --timezone="America/Chicago" --use-rewrites="1" --backend-frontname="Kmadmin" --search-engine=elasticsearch7 --elasticsearch-host="localhost" --elasticsearch-port=9200
+                php bin/magento setup:install --base-url="http://example.com/" --db-host="localhost" --db-name="mage242p1" --db-user="root" --db-password="root" --admin-firstname="Digirock" --admin-lastname="media" --admin-email="kmadmin@example.com" --admin-user="kmadmin" --admin-password="Toronto@8969" --language="en_US" --currency="USD" --timezone="America/Chicago" --use-rewrites="1" --backend-frontname="Kmadmin" --search-engine=elasticsearch7 --elasticsearch-host="localhost" --elasticsearch-port=9200
             </p>
 
             <p class="note">Note:- With elasticsearch on Docker.</p>
             <p>
-                php bin/magento setup:install --base-url=http://localhost:8000/ --db-host=mysql --db-name=root --db-user=root --db-password=root --admin-firstname=Kinex --admin-lastname=Media --admin-email=kinextest2@gmail.com --admin-user=kmadmin --admin-password=Toronto@6989 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=0 --search-engine=elasticsearch7 --elasticsearch-host=elasticsearch --elasticsearch-port=9200
+                php bin/magento setup:install --base-url=http://localhost:8000/ --db-host=mysql --db-name=root --db-user=root --db-password=root --admin-firstname=Digirock --admin-lastname=Media --admin-email=demotest@gmail.com --admin-user=kmadmin --admin-password=Magento@0001 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=0 --search-engine=elasticsearch7 --elasticsearch-host=elasticsearch --elasticsearch-port=9200
             </p>
 
             <p class="note">Note:- With elasticsearch on Server.</p>
             <p>
-                php bin/magento setup:install --base-url=http://45599b2792.nxcli.net/ --db-host=localhost --db-name=addf5584_M2_demo --db-user=addf5584_M2_demo --db-password=SportyBeheldYuleGripe --admin-firstname=Kinex --admin-lastname=Media --admin-email=kinextest2@gmail.com --admin-user=kmadmin --admin-password=Toronto@6989 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=0 --search-engine=elasticsearch7 --elasticsearch-host=https//cg-3698-elasticsearch.us-midwest-1.nxcli.net --elasticsearch-port=55313
+                php bin/magento setup:install --base-url=http://example.com/ --db-host=localhost --db-name=magedb --db-user=magedb --db-password=SportyBeheldYuleGripe --admin-firstname=Digirock --admin-lastname=Media --admin-email=demotest@gmail.com --admin-user=kmadmin --admin-password=Magento@0001 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=0 --search-engine=elasticsearch7 --elasticsearch-host=https//example-elastic-search.com --elasticsearch-port=12345
             </p>
         </div>        
 
