@@ -35,12 +35,12 @@
 
         </VirtualHost>
 
-    > sudo a2ensite magedocker.com.conf
+    > sudo a2ensite magedocker.com
     > sudo systemctl restart apache2
     > sudo nano /etc/hosts
     > Open hosts file via nano and update your domain like
-        127.0.0.1 magedocker.com.conf
-        127.0.0.1 www.magedocker.com.conf
+        127.0.0.1 magedocker.com
+        127.0.0.1 www.magedocker.com
 
 6. Refrence sites 
     > https://www.vultr.com/docs/how-to-configure-apache-as-a-reverse-proxy-with-mod-proxy-54152
